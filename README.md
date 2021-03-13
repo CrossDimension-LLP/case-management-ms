@@ -1,2 +1,1 @@
-# case-management-ms
-CRUD related to Case 
+# case-management-Ms

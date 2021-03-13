@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: case-management-graphql-Ms
+
+  data:
+    mongodb:
+      port: 27017
+      host: localhost
+      database: octopus
+
+octopus:
+  configuration:
+    apigw:
+      url: http://localhost:9090
+    foreignClient:
+      functionalUnit_MS:
+        endpoint: /workUnitManagement/v1/workUnit
+
+server:
+  http2:
+    enabled: true
+  port: 8080
+
+graphql:
+  servlet:
+    mapping: /caseManagement/v1/graphql

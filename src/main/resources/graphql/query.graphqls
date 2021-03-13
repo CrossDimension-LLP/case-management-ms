@@ -1,0 +1,3 @@
+type Query {
+    allCases: [Case!]
+}

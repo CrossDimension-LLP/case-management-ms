@@ -1,0 +1,59 @@
+type Case {
+    id: String!
+    name: String!
+    title: String!
+    description: String!
+    priority: String
+    severity: String
+    caseType: String!
+    caseSubType: String!
+    status: String!
+    functionalUnit: FunctionalUnit
+    assignee: Employee
+    owner: ClientIndividual
+}
+
+type FunctionalUnit {
+    id:String!
+    unitName: String!
+    relatedParty: [Employee!]
+    manager: Employee
+    unitLead: Employee
+    functionalArea: [String!]!
+}
+
+type ClientIndividual {
+    id:String!
+    username: String!
+    firstName: String!
+    lastName: String
+    fullName: String!
+    type: String!
+    mobile: String!
+    fax: String
+    email: String!
+    city: String
+    country: String
+    zipcode: String!
+    street: String
+    state: String
+    area: String
+
+}
+
+type Employee {
+    id:String!
+    firstName: String!
+    lastName: String
+    fullName: String!
+    role: String!
+    type: String!
+    primaryContact: String!
+    secondaryContact: String
+    email: String!
+    designation: String
+    city: String
+    country: String
+    zipcode: String!
+    street: String
+}
